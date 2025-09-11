@@ -33,18 +33,21 @@ export default function Profile() {
   return (
     <div>
             <Center style={{display:'flex',flexDirection:'column',gap:'20px',marginTop:'50px'}}>
-            <Paper radius="md" withBorder p="lg" bg="var(--mantine-color-body)">
+            <Paper radius="md" withBorder  p="lg" bg="#1e1e1e">
             <Avatar
                 src={userData.avatar}
                 size={120}
                 radius={120}
                 mx="auto"
             />
-            <Text ta="center" fz="lg" fw={500} mt="md">
+            <Text ta="center" fz="lg" fw={500} mt="md" style={{color:'white'}}>
                 User: {userData.name}
             </Text>
             <Text ta="center" c="dimmed" fz="sm">
                 User ID: {userData._id}
+            </Text>
+            <Text style={{color:'white'}} >
+                Email : {userData.email}
             </Text>
             </Paper>
         </Center>
