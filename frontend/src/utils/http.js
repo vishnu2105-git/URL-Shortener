@@ -59,6 +59,7 @@ class Service {
     }
     return window.location.origin;
   };
+  
 }
 
 export default Service

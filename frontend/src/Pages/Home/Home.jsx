@@ -53,7 +53,7 @@ const Home = () => {
               marginTop: "1rem",
             }}
           >
-            URL Shortener 
+            URL PRUNER
           </Title>
 
           <Text

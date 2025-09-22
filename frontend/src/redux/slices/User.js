@@ -50,3 +50,12 @@ export const getRole = (state) => {
 export const getIsLoggedIn = (state) => state.user.isLoggedIn;
 
 export default userSlice.reducer;
+
+
+
+
+
+
+
+
+

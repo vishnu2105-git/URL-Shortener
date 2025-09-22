@@ -1,6 +1,8 @@
 import { OAuth2Client } from 'google-auth-library';
-import {User as userModel} from '../models/user/user.model.js';
+import User from '../db/Models/userModel.js';
 import jwt from 'jsonwebtoken';
+import dotenv from 'dotenv';
+dotenv.config();
 
 const oAuthClient = new OAuth2Client(
   process.env.GOOGLE_CLIENT_ID,
@@ -42,7 +44,7 @@ export const loginWithGoogle = async (req, res) => {
         } = ticket.getPayload();
 
         console.log("Finding the user from mongodb");
-        let user = await userModel.findOne({ email });
+        let user = await User.findOne({ email });
 
         // if user is not present then we will sign it up by creating the record of user
         if(!user) {
@@ -50,7 +52,7 @@ export const loginWithGoogle = async (req, res) => {
             console.log("User not found in mongodb. Creating the new accound for user.");
             try {
 
-                user = await userModel.create({
+                user = await User.create({
                     name: `${firstName} ${lastName ?? ""}`.trim(),
                     email: email,
                     avatar: picture,

@@ -2,3 +2,19 @@
     margin: 0;
     padding: 0;
 }
+
+.container-box-response {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 50px;
+    width: 90%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}

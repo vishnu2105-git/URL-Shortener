@@ -16,7 +16,7 @@ const googleClientId = import.meta.env.VITE_GOOGLE_CLIENT_ID;
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <GoogleOAuthProvider clientId={googleClientId}>
-      <MantineProvider>
+      <MantineProvider withGlobalStyles withNormalizeCSS theme={{ colorScheme: 'dark' }}>
         <Notifications zIndex={9999} />
         <QueryClientProvider client={queryClient}>
             <Provider store={store}>
