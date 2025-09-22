@@ -1,7 +1,6 @@
 // routes/userRoutes.js
 import express from 'express';
 import { createUser, getUserByEmail, getUserProfile} from '../Controllers/userController.js';
-import { get } from 'mongoose';
 import { isLoggedIn } from '../Middleware/authMiddleware.js';
 const router = express.Router();
 
