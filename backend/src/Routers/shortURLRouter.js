@@ -1,6 +1,6 @@
 import { Router } from "express";
 
-import { changeactivestatus, createShortUrl, deletelink, getLongUrl, getMyUrls, updateshortcode } from "../Controllers/shortURLController.js";
+import { changeactivestatus, createShortUrl, deletelink, getLongUrl, getMyUrls, updateshortcode } from "../Controllers/shortUrlController.js";
 import { isLoggedIn } from "../Middleware/authMiddleware.js";
 
 
