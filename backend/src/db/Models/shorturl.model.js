@@ -25,7 +25,7 @@ const shortURLSchema = new Schema(
 
 shortURLSchema.pre("save", function (next) {
   if (!this.shortUrl && this.shortCode) {
-    this.shortUrl = `https://tinylink-url.onrender.com/api/s/${this.shortCode}`;
+    this.shortUrl = `http://localhost:3000/api/s/${this.shortCode}`;
   }
   next();
 });
