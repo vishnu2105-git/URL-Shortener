@@ -87,7 +87,9 @@ export default function UrlForm(props) {
           boxShadow: '0 4px 10px rgba(0, 0, 0, 0.05)',
         }}
       >
-        <h2>URL Shortener</h2>
+        <h2 order={2} style={{ background: 'linear-gradient(90deg, #667eea, #764ba2)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
+            URL Shortener
+          </h2>
 
         <div
           style={{

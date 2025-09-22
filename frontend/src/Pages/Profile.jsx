@@ -29,7 +29,7 @@ export default function Profile() {
     return (
     <Center style={{ height: '50vh', flexDirection: 'column', gap: '10px' }}>
         <Text style={{ fontSize: '50px' }}>♾️</Text>
-        <Text>Loading your URLs...</Text>
+        <Text>Loading your Profile...</Text>
     </Center>
     );
   }
