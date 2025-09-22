@@ -1,76 +1,7 @@
-# 🚀 create-bz-mern-app
-
-[![npm version](https://img.shields.io/npm/v/create-bz-mern-app.svg)](https://www.npmjs.com/package/create-bz-mern-app)
-[![npm downloads](https://img.shields.io/npm/dm/create-bz-mern-app.svg)](https://www.npmjs.com/package/create-bz-mern-app)
-[![GitHub stars](https://img.shields.io/github/stars/kaushikkumarbz/create-bz-mern-app?style=social)](https://github.com/kaushikkumarbz/create-bz-mern-app)
-
-A modern fullstack boilerplate powered by:
-
-- ⚛️ **Frontend**: Vite + React + Mantine  
-- 🔐 **Authentication**: Google Login + JWT  
-- 🌐 **Backend**: Node.js + Express + MongoDB  
-
-## ⚙️ Full Setup Instructions
-
-### 🔹 Step 1: Create a Git Repository
-
-Create a [new GitHub repository](https://github.com/new) (e.g.):
-```
-https://github.com/kaushikkumarbz/url-shortener-dev-example
-```
-During repo creation, **select `.gitignore` → Node**.
-
+#Project SetUp
 ---
 
-### 🔹 Step 2: Clone the Repository
-
-```bash
-git clone git@github.com:kaushikkumarbz/url-shortener-dev-example.git
-cd url-shortener-dev-example
-```
-
----
-
-### 🔹 Step 3: Scaffold the Project
-
-Inside the cloned folder:
-
-```bash
-npx create-bz-mern-app@latest
-```
-
-This will set up the following folder structure:
-
-```
-url-shortener-dev-example/
-  ├── backend/
-  └── frontend/
-```
-
----
-
-### 🔹 Step 4: Configure `.gitignore` and `.env` Files
-
-By default, `.env` files are ignored. But for Vite frontend to work properly, you should:
-
-1. Open `.gitignore`
-2. Replace:
-   ```
-   .env
-   .env/*
-   ```
-   with:
-   ```
-   /backend/.env
-   ```
-
-✅ This allows:
-- ✅ `frontend/.env` to be committed (used by Vite)
-- 🔒 `backend/.env` to stay private (JWT, DB credentials)
-
----
-
-### 🔹 Step 5: Setup Environment Variables
+### 🔹 Step 1: Setup Environment Variables
 
 #### 📁 `backend/.env`
 ```env
@@ -90,7 +21,7 @@ VITE_DEV_PROXY=http://localhost:3000
 
 ---
 
-### 🔹 Step 6: Install Dependencies and Start
+### 🔹 Step 2: Install Dependencies and Start
 
 Quick Start
 Start frontend and backend together from root:
@@ -133,6 +64,3 @@ Feel free to fork and create PRs to improve the boilerplate!
 
 ---
 
-## 📄 License
-
-MIT © 2025 [Kaushikk](https://github.com/kaushikkumarbz)
